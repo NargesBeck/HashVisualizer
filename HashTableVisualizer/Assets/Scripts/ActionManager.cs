@@ -14,8 +14,18 @@ public class ActionManager : MonoBehaviour
         Linker.Instance.UIManager.InputPanel.SetActive(true);
     }
 
-    public void OnSubmitButtonClick()
+    public void OnAddSubmitButtonClick()
     {
-        Linker.Instance.UIManager.HandleSubmitClick();
+        Linker.Instance.UIManager.HandleAddSubmitClick();
+    }
+
+    public void OnSearchButtonClick()
+    {
+        Linker.Instance.UIManager.SearchPanel.SetActive(true);
+    }
+
+    public void OnSearchSubmitButtonClick()
+    {
+        Linker.Instance.UIManager.HandleSearchSubmitClick();
     }
 }
