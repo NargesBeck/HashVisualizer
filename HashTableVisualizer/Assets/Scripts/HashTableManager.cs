@@ -23,7 +23,7 @@ public class HashTableManager : MonoBehaviour
 
     public IEnumerator Search(string text)
     {
-        if (int.TryParse(Linker.Instance.UIManager.GetInputFieldValue, out int key))
+        if (int.TryParse(text, out int key))
         {
             for (int i = 0; i < Table[Hash(key)].valueChain.Count; i++)
             {
